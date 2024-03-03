@@ -16,9 +16,9 @@ public class MyLoggingAspect {
 
         MethodSignature methodSignature=(MethodSignature) proceedingJoinPoint.getSignature();
         String methodName = methodSignature.getName();
-        System.out.println("Begin of "+methodName);
+        System.out.println("Begin of the  "+methodName);
         Object targetMethodResult =proceedingJoinPoint.proceed();
-        System.out.println("End of "+methodName);
+        System.out.println("End of the "+methodName);
         return targetMethodResult;
 
     }
